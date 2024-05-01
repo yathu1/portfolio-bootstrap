@@ -71,8 +71,10 @@
           <div class="row align-items-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
               <div class="my-5">
-                <h2 class="text-center fw-bold mb-2">Hi! I am Yathu,</h2>
-                <h2 class="text-primary text-center fw-bold mb-2">a full-stack Java developer</h2>
+                <h2 class="text-center fw-bold mb-2">Hi! My name is Yathu,</h2>
+                <h2 class="text-primary text-center fw-bold mb-2">
+                  I'm a  <span id="target-text"></span>
+                </h2>
                 <p class="lead text-muted mb-4">
                   I specialize in building web applications using Angular and
                   SpringBoot. Scroll down to see what I have been working on.
@@ -343,5 +345,13 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#target-text', {
+          strings: ['Java developer','Angular developer','Freelancer','Full-stack developer'],
+          typeSpeed: 100,
+          loop:true
+        });
+      </script>
   </body>
 </html>
